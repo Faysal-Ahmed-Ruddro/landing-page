@@ -2,11 +2,52 @@
      website-font
  ---------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+*{
+    margin: 0;
+}
  body{
      font-family: 'Poppins', sans-serif;
      background-color: #F3F1FF;
  }
+ /*------------------
+  Menubar-styles
+  ------------------- */
+  header{
+      width: 100%;
+       margin:0 auto;
+       background: #562EFF;
+  }
+  #menubar{
+      width: 870px;
+      background: #562EFF;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 0 auto;
+  }
+  /* logo-styles */
+  .logo{
+      display: flex;
+      align-items: center;
+  }
+.logo img{
+    width:41px;
+    height: 50px;
+    margin-right: 17px;
+    align-items: center;
+    cursor: pointer;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+        list-style-type: none;
+}
+.menu li a{
+    padding: 20px 25px;
+}
+
  main{
      display: flex;
      flex-direction: column;
@@ -139,7 +180,8 @@
         width: 100%;
     }
     .players{
-        grid-template-columns: repeat(2, 1fr);
+      
+    background: red;
 }
     
 }
