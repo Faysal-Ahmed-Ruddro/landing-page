@@ -37,6 +37,11 @@
     align-items: center;
     cursor: pointer;
 }
+.logo p{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
 .menu ul{
     display: flex;
     align-items: center;
@@ -44,8 +49,19 @@
 .menu ul li{
         list-style-type: none;
 }
+.menu ul li a:hover{
+    color: gray;
+}
 .menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
     padding: 20px 25px;
+}
+.menu li img{
+    border:2px solid darkgrey ;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
  main{
@@ -173,15 +189,19 @@
         flex-direction: column;
         align-items: center;
     }
+    #menubar{
+        display: none;
+    }
 }
 /* tablet-devices */
 @media only screen and (min-width:688px) and (max-width:992px) {
     .container{
         width: 100%;
     }
-    .players{
-      
-    background: red;
-}
-    
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #menubar{
+        display: none;
+    }
 }
